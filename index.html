@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ScreenWise AI — Smart TV Companion</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app-shell">
+    <header class="topbar">
+      <div class="brand"><span class="brand-mark">S</span><span>SCREENWISE<span class="accent"> AI</span></span></div>
+      <nav aria-label="Main navigation">
+        <button class="nav-btn selected" data-nav="discover">Discover</button>
+        <button class="nav-btn" data-nav="watchlist">My Watchlist <span id="watch-count">0</span></button>
+      </nav>
+      <div class="status"><span class="live-dot"></span> SMART PICKS</div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow">YOUR NEXT GREAT WATCH STARTS HERE</p>
+          <h1>Less searching.<br><span class="gradient-text">More watching.</span></h1>
+          <p class="hero-desc">Tell ScreenWise your mood and your time. Get a shortlist made for your next break.</p>
+          <div class="hero-actions">
+            <button class="primary-btn focusable" id="surprise-btn">✦ Surprise me</button>
+            <button class="secondary-btn focusable" id="how-btn">How it works</button>
+          </div>
+          <div class="trust-row"><span>✦ Mood-based picks</span><span>◷ Time-aware</span><span>⌂ Your watchlist</span></div>
+        </div>
+        <div class="hero-art" aria-label="Abstract cinematic artwork">
+          <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+          <div class="glass-card"><div class="play-symbol">▶</div><span>YOUR NEXT FAVORITE</span><strong>DISCOVER<br>WHAT MOVES YOU</strong></div>
+          <div class="floating-chip chip-top">✦ PERSONALIZED</div><div class="floating-chip chip-bottom">◷ JUST THE RIGHT LENGTH</div>
+        </div>
+      </section>
+
+      <section class="controls-panel" id="discover-panel">
+        <div class="section-heading"><div><p class="eyebrow">MAKE IT YOURS</p><h2>What are you in the mood for?</h2></div><span class="small-note">Choose a mood + time</span></div>
+        <div class="mood-row" id="moods">
+          <button class="mood-btn active focusable" data-mood="Any mood">✧ <span>Anything</span></button>
+          <button class="mood-btn focusable" data-mood="Feel-good">☀ <span>Feel-good</span></button>
+          <button class="mood-btn focusable" data-mood="Curious">⌕ <span>Curious</span></button>
+          <button class="mood-btn focusable" data-mood="Adventurous">➤ <span>Adventure</span></button>
+          <button class="mood-btn focusable" data-mood="Relaxed">☾ <span>Relaxed</span></button>
+        </div>
+        <div class="time-row"><span class="time-label">I HAVE</span>
+          <button class="time-btn active focusable" data-time="Any">Any time</button>
+          <button class="time-btn focusable" data-time="10">10 min</button>
+          <button class="time-btn focusable" data-time="20">20 min</button>
+          <button class="time-btn focusable" data-time="60">60+ min</button>
+          <span class="results-count" id="results-count">6 picks</span>
+        </div>
+      </section>
+
+      <section class="recommendations" id="recommendations-panel">
+        <div class="section-heading"><div><p class="eyebrow">PICKED FOR YOUR MOMENT</p><h2 id="list-title">Your smart shortlist</h2></div><span class="small-note">Demo content · sample data</span></div>
+        <div class="content-grid" id="content-grid"></div>
+        <div class="empty-state hidden" id="empty-state"><div class="empty-icon">⌕</div><h3>No picks for this combination</h3><p>Try another mood or time range.</p><button class="secondary-btn focusable" id="reset-btn">Reset filters</button></div>
+      </section>
+      <section class="info-panel hidden" id="info-panel"><button class="close-btn focusable" id="close-info">✕</button><p class="eyebrow">THE IDEA</p><h2>Recommendations that respect your time.</h2><p>ScreenWise is a smart-TV companion prototype. It filters a sample library by mood and duration, explains why each pick fits, and lets you save choices to a local watchlist. The demo runs without a paid API or account.</p><div class="info-pills"><span>Local recommendation logic</span><span>Remote-friendly controls</span><span>Watchlist saved in this browser</span></div></section>
+      <footer><span>SCREENWISE AI <span class="accent">●</span> CONCEPT PROTOTYPE</span><span>Built for the big screen · Use ← ↑ → ↓ and Enter</span></footer>
+    </main>
+  </div>
+  <div class="toast" id="toast" role="status"></div>
+  <script src="app.js"></script>
+</body>
+</html>
