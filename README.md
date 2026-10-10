@@ -24,3 +24,8 @@ Prototype only. The recommendation engine uses local sample data and is not a co
 
 ## License
 MIT License — see `LICENSE`.
+
+ Our Team
+- **Himanshu Kumar** — Co-founder & Developer
+- **Muskan Kumari** — Co-founder & Developer
+We are a two-person team building ScreenWise AI to make entertainment discovery simpler and more personalized.
