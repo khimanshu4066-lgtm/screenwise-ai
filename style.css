@@ -4,38 +4,52 @@
 @media(max-width:800px){.app-shell{padding:0 22px}.topbar{height:auto;min-height:75px;flex-wrap:wrap;padding:15px 0}.status{display:none}.hero{grid-template-columns:1fr;padding:35px 0}.hero-art{height:240px}.content-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.section-heading{align-items:start;flex-direction:column}.results-count{margin-left:0}}@media(max-width:520px){nav{width:100%;order:3}.content-grid{grid-template-columns:1fr}.mood-btn{flex:1;min-width:120px}.hero h1{font-size:42px}footer{flex-direction:column}.trust-row{gap:12px}}
 
 /* Our Team Section */
+
+/* Our Team - Minimal Footer Style */
 .team-section {
-  padding: 48px 20px;
+  padding: 24px 16px 18px;
   text-align: center;
-  color: #f5f5f5;
+  color: #b8b8c5;
   background: #101014;
+  border-top: 1px solid #292932;
 }
 
 .team-section h2 {
-  margin-bottom: 10px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #f5f5f5;
+  margin: 0 0 6px;
+}
+
+.team-section > p {
+  font-size: 11px;
+  margin: 0 0 14px;
+  color: #888895;
 }
 
 .team-members {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 20px;
-  margin-top: 24px;
+  gap: 24px;
 }
 
 .team-member {
-  width: 220px;
-  max-width: 100%;
-  padding: 24px;
-  border: 1px solid #34343d;
-  border-radius: 16px;
-  background: #191920;
+  padding: 4px 10px;
+  background: transparent;
+  border: none;
+  width: auto;
 }
 
 .team-member h3 {
-  margin-top: 0;
+  font-size: 12px;
+  font-weight: 500;
+  margin: 0 0 4px;
+  color: #e5e5ed;
 }
 
 .team-member p {
-  color: #b8b8c5;
+  font-size: 10px;
+  margin: 0;
+  color: #888895;
 }
